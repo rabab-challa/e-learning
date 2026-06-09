@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from "../components/navbar";
 import Hero from "../components/hero";
+import Oursuccess from '../components/ourSuccess';
 export default function Home() {
   return (
     <>
@@ -8,6 +9,7 @@ export default function Home() {
         <Navbar />
         <Hero />
       </section>
+      <Oursuccess />
     </>
   );
 }
