@@ -4,7 +4,7 @@ import Hero from "../components/hero";
 export default function Home() {
   return (
     <>
-      <section className="bg-[#49BBBD] w-full rounded-b-[300px]  w-full overflow-hidden">
+      <section className="bg-[#49BBBD] w-full w-full overflow-hidden">
         <Navbar />
         <Hero />
       </section>
