@@ -171,4 +171,12 @@ body {
     items-center 
     justify-center;
   }
-
+  .container2-box4{
+    @apply absolute bg-[#F25471]  absolute flex top-48 left-120 justify-between items-center rounded-xl w-12 h-12; 
+  }
+  .container2-box4-div{
+    @apply bg-white flex justify-between items-center ml-2 rounded-lg w-8 h-8; 
+  }
+  .container2-box4-logo{
+    @apply flex justify-between items-center ml-1;
+  }

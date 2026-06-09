@@ -63,6 +63,16 @@ const Hero = () => {
           <button className='container2-box3-btn'>
             Join Now</button>
         </div>
+        <div className='container2-box4'>
+          <div className='container2-box4-div'>
+            <Image src="/logo4.png"
+            alt='logo'
+            width={20}
+            height={20}
+            className='container2-box4-logo'
+            />
+          </div>
+        </div>
       </div>
     </div>
   )
