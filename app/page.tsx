@@ -5,9 +5,10 @@ import Oursuccess from '../components/ourSuccess';
 export default function Home() {
   return (
     <>
-      <section className="bg-[#49BBBD] w-full w-full overflow-hidden">
+      <section className="bg-[#49BBBD] overflow-hidden w-full ">
         <Navbar />
         <Hero />
+        
       </section>
       <Oursuccess />
     </>

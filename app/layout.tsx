@@ -19,7 +19,7 @@ const poppins = Poppins({
   weight: ["100","200","300", "400", "500", "600", "700","800","900"],
 });
 const nunitoSans = Nunito_Sans({
-  variable: "--font-nunito-sans",
+  variable: "--font-nunito",
   subsets: ["latin"],
   weight: ["200","300", "400", "500", "600", "700","800","900"],
 });
