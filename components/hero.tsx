@@ -2,11 +2,11 @@ import React from 'react'
 import Image from 'next/image'
 const Hero = () => {
   return (
-    <div className='flex justify-between rounded-full items-center px-20' >
-      <div className='ml-10 -mt-60'>
-        <h1 className='text-4xl w-120 font-semibold text-white'><span className="text-[#F88C3D] ">Studying</span> Online is now much easier</h1>
+    <div className='flex justify-between rounded-full items-center mt-10' >
+      <div className='ml-24 pb-50 '>
+        <h1 className='text-4xl w-120 font-bold text-white'><span className="text-[#F88C3D] ">Studying</span> Online is now much easier</h1>
         <br />
-        <p className='text-sm w-70 text-white'>TOTC is an interesting platform that will teach you in more an interactive way</p>
+        <p className='text-base w-90 font-light text-white'>TOTC is an interesting platform that will teach you in more an interactive way</p>
         <br />
         <div className='flex w-87 justify-between'>
           <button className='bg-white/30
@@ -27,40 +27,42 @@ const Hero = () => {
             <p className='text-sm mt-3 text-[#252641]'>Watch how it works</p>
         </div>
       </div>
-      <div className='relative'>
+      <div className='relative font-nunito'>
         <Image src="/girl.png" 
         alt="Student"
-        width={544} 
-        height={892}
-        className='mt-10 mr-20' />
-        <div className='absolute flex top-55 right-110 justify-between items-center rounded-xl w-50 h-15 bg-white/80 '> 
-          <div className='bg-[#23BDEE] ml-4 h-10 items-center justify-center flex w-10 mx-2 rounded-lg;'>
+        width={500} 
+        height={780}
+        className=' mr-40  ' />
+        <div className='absolute flex top-38 -left-10 justify-between items-center rounded-xl w-52 h-18 bg-white/80 '> 
+          <div className='bg-[#23BDEE] ml-4 w-9 h-9 items-center justify-center flex mx-2 rounded-lg'>
              <Image src="/calendar 1.png" 
             alt="calender" 
-            width={32}
-            height={32}
+            width={20}
+            height={20}
+              className='ml-0.5'
             />
           </div>
-          <p className='text-sm font-thin mr-4 text-[#545567]'> <span className='font-semibold text-[#595959]'>250k </span><br/> Assisted Student</p>
+          <p className='text-sm mr-6 text-[#545567]'> <span className='font-semibold test-base text-[#595959]'>250k </span><br/> Assisted Student</p>
         </div>
-        <div className='absolute flex top-90 left-92 justify-between items-center rounded-xl w-70 h-15 bg-white/80'>
-          <div className='bg-[#F88C3D] ml-4 h-10 w-10 mx-2 items-center justify-center flex rounded-lg'>
+        <div className='absolute flex top-74 right-12 gap-4 items-center rounded-xl w-68 h-18 bg-white/80'>
+          <div className='bg-[#F88C3D] ml-3 h-9 w-9 items-center justify-center flex rounded-lg'>
            <Image src="/email.png" 
-            alt="calender" 
-            width={32}
-            height={32}
+            alt="mail" 
+            width={20}
+            height={20}
+            className='ml-0.5'
             />
           </div>
-          <p className='text-sm font-thin mr-4 text-[#545567]'><span className='font-semibold text-[#595959]'> Congratulations </span> <br/> Your admission completed</p>
+          <p className='text-sm text-[#545567]'><span className='font-semibold text-base text-[#595959]'> Congratulations </span> <br/> Your admission completed</p>
         </div>
-        <div className='absolute top-115 right-90 w-[300px] bg-white/80 rounded-xl p-5'>
-          <div className='flex items-center gap-3'>
+        <div className='absolute top-98 -left-6 w-62 h-30 bg-white/80 rounded-xl px-3 pt-3 items-center'>
+          <div className='flex items-center gap-2 '>
             <div className='relative'>
             <Image
               src="/user-profile.png"
               alt="profile"
-              width={45}
-              height={45}
+              width={35}
+              height={35}
               className='rounded-full'
             />
             <div className='absolute bg-[#2EBB5E] h-4 w-4 rounded-full border border-2 border-white bottom-0 right-0'></div>
@@ -70,7 +72,7 @@ const Hero = () => {
               <p className='text-sm text-[#595959]'> Today at 12.00 PM</p>
             </div>
           </div>
-          <button className='mt-5 
+          <button className='mt-2
             bg-[#D8587E] 
             w-36 
             h-10 
@@ -82,13 +84,13 @@ const Hero = () => {
             justify-center'>
             Join Now</button>
         </div>
-        <div className='absolute bg-[#F25471]  absolute flex top-48 left-120 justify-between items-center rounded-xl w-12 h-12'>
+        <div className='absolute bg-[#F25471] flex top-28 right-30 justify-between items-center rounded-xl w-12 h-12'>
           <div className='bg-white flex justify-between items-center ml-2 rounded-lg w-8 h-8'>
             <Image src="/logo4.png"
             alt='logo'
             width={20}
             height={20}
-            className='flex justify-between items-center ml-1'
+            className='flex justify-between items-center ml-1.5'
             />
           </div>
         </div>

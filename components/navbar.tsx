@@ -1,8 +1,8 @@
 const Navbar = () => {
   return (
 
-    <nav className="flex items-center w-full gap-8 justify-between text-white py-2 px-10 ">
-        <div className="flex text-2xl font-bold relative px-7 py-3">
+    <nav className="flex items-center w-full gap-8 pt-3 px-11 justify-between text-white  ">
+        <div className="flex text-2xl font-bold relative py-3">
             <div className="relative left-8 h-10 w-10 absolute rounded border border-[#00fff0] rotate-45 z-0"></div>
             <h1 className="z-10 pt-1">TOTC</h1>
         </div>
@@ -13,9 +13,8 @@ const Navbar = () => {
             <li><a href="/blog">Blog</a></li>
             <li> <a href="/about">About Us</a></li>
         </ul>
-        <div className="flex font-thin mr-15 gap-6">
+        <div className="flex font-medium text-base mr-15 gap-6">
             <button className="bg-white
-                text-lg
                 flex
                 text-[#5B5B5B]
                 justify-center
@@ -23,9 +22,8 @@ const Navbar = () => {
                 py-2 
                 hover:bg-white/30
                 hover:text-white 
-                 rounded-full">Login</button>
+                rounded-full">Login</button>
             <button className="bg-white/30
-                text-lg
                 flex
                 text-white 
                 justify-center
