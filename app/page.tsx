@@ -3,6 +3,7 @@ import Navbar from "../components/navbar";
 import Hero from "../components/hero";
 import Oursuccess from '../components/ourSuccess';
 import CloudSoft from '../components/cloudSoft';
+import WhatIs from '../components/whatIs';
 export default function Home() {
   return (
     <>
@@ -12,6 +13,7 @@ export default function Home() {
       </section>
       <Oursuccess />
       <CloudSoft />
+      <WhatIs />
     </>
   );
 }

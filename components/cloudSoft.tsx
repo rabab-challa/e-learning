@@ -13,9 +13,8 @@ const CloudSoft = () => {
             {Features.map((item, index) => (
             <div
               key={index}
-              className="relative bg-white rounded-3xl px-10 py-16 text-center w-80 mx-auto shadow-lg "
+              className="relative bg-white rounded-xl px-10 py-16 text-center w-80 mx-auto shadow-lg "
             >
-              {/* Floating Icon */}
               <div className={`absolute -top-10 left-1/2 -translate-x-1/2 shadow-lg w-18 h-18 rounded-full flex items-center justify-center ${item.bg}`}>
                 <Image
                     src={item.image}

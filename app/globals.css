@@ -30,6 +30,7 @@
   --color-blue-light:#29B9E7;
   --color-pink-bold:#D8587E;
   --color-pink-light: #F3627C;
+  --color-card-grey: #C4C4C4;
 }
 
 @media (prefers-color-scheme: dark) {
