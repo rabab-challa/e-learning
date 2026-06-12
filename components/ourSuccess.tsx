@@ -2,7 +2,7 @@ import React from 'react'
 import Stat from "../data/stats" 
 const Oursuccess = () => {
   return (
-    <div className='mx-30 my-20' >
+    <div className='mx-30 my-20' font-monts >
         <div className='text-center text-dark-text  mb-15'>
           <h1 className=' justify-center font-bold text-2xl lg:text-3xl'>Our Success</h1> <br/>
           <p className='justify-center text-xs font-normal'>Ornare id fames interdum porttitor nulla turpis etiam. Diam vitae sollicitudin at nec <br /> 

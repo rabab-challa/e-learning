@@ -13,7 +13,7 @@ const CloudSoft = () => {
             {Features.map((item, index) => (
             <div
               key={index}
-              className="relative bg-white rounded-xl px-10 py-16 text-center w-80 mx-auto shadow-lg "
+              className="relative bg-white rounded-xl px-10 py-16 text-center w-80 mx-auto  shadow-[0_-4px_20px_rgba(38,45,118,0.05),0_20px_60px_rgba(38,45,118,0.08)] "
             >
               <div className={`absolute -top-10 left-1/2 -translate-x-1/2 shadow-lg w-18 h-18 rounded-full flex items-center justify-center ${item.bg}`}>
                 <Image

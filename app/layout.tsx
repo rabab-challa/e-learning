@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Poppins, Nunito_Sans, } from "next/font/google";
+import { Geist, Geist_Mono, Poppins, Nunito_Sans, Montserrat } from "next/font/google";
 
 
 import "./globals.css";
@@ -24,6 +24,12 @@ const nunitoSans = Nunito_Sans({
   subsets: ["latin"],
   weight: ["200","300", "400", "500", "600", "700","800","900"],
 });
+const montserrat = Nunito_Sans({
+  variable: "--font-monts",
+  subsets: ["latin"],
+  weight: ["200","300", "400", "500", "600", "700","800","900"],
+});
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
