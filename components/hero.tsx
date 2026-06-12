@@ -5,7 +5,7 @@ const Hero = () => {
   <div className='relative'>
       <div className=' flex justify-between flex-col lg:flex-row items-center mt-5'>
         <div className='ml-0 lg:ml-24 px-6 lg:px-0 pb-10 lg:pb-50 text-center lg:text-left'>        
-          <h1 className='text-3xl md:text-4xl w-full lg:w-120 max-w-xl font-bold leading-normal text-white'><span className="text-[#F48C06] ">Studying</span> Online is now much easier</h1>
+          <h1 className='text-3xl md:text-4xl w-full lg:w-120 max-w-xl font-bold leading-normal text-white'><span className="text-orange-stu">Studying</span> Online is now much easier</h1>
         <br />
         <p className='text-base w-full lg:w-90 max-w-md pt-3 font-light text-white mx-auto lg:mx-0'>TOTC is an interesting platform that will teach you in more an interactive way</p>
         <br />
@@ -33,14 +33,14 @@ const Hero = () => {
             <p className='text-base mt-4 text-[#252641]'>Watch how it works</p>
         </div>
       </div>
-      <div className='relative font-nunito'>
+      <div className='relative text-[var(--font-nunito)]'>
         <Image src="/girl.png" 
         alt="Student"
         width={500} 
         height={780}
         className='w-[300px] md:w-[400px] lg:w-[500px] h-auto mr-0 lg:mr-50 '/>
         <div className='absolute flex hidden md:flex top-38 -left-10 justify-between items-center rounded-xl w-52 h-18 bg-white/80 '> 
-          <div className='bg-[#23BDEE]  ml-4 w-9 h-9 items-center justify-center flex mx-2 rounded-lg'>
+          <div className='bg-blue-d-cyan ml-4 w-9 h-9 items-center justify-center flex mx-2 rounded-lg'>
              <Image src="/calendar 1.png" 
             alt="calender" 
             width={20}
@@ -48,10 +48,10 @@ const Hero = () => {
               className='ml-0.5'
             />
           </div>
-          <p className='text-sm mr-6 text-[#545567]'> <span className='font-bold text-base text-[#595959]'>250k </span><br/> Assisted Student</p>
+          <p className='text-sm mr-6 text-grey-light'> <span className='font-medium text-base text-grey-dark'>250k </span><br/> Assisted Student</p>
         </div>
         <div className='hidden md:flex absolute flex top-74 right-23 gap-4 items-center rounded-xl w-68 h-18 bg-white/80'>
-          <div className='bg-[#F88C3D] ml-3 h-9 w-9 items-center justify-center flex rounded-lg'>
+          <div className='bg-orange-box ml-3 h-9 w-9 items-center justify-center flex rounded-lg'>
            <Image src="/email.png" 
             alt="mail" 
             width={20}
@@ -59,7 +59,7 @@ const Hero = () => {
             className='ml-0.5'
             />
           </div>
-          <p className='text-sm text-[#545567]'><span className='font-bold text-base text-[#595959]'> Congratulations </span> <br/> Your admission completed</p>
+          <p className='text-sm text-grey-light'><span className='font-medium text-base text-grey-dark'> Congratulations </span> <br/> Your admission completed</p>
         </div>
         <div className='absolute top-98 -left-6 w-62 h-30 bg-white/80 rounded-xl px-3 pt-3 items-center'>
           <div className='flex items-center gap-2 '>
@@ -74,12 +74,12 @@ const Hero = () => {
             <div className='absolute bg-[#2EBB5E] h-4 w-4 rounded-full border border-2 border-white -bottom-1 -right-1'></div>
             </div>
             <div >
-              <h3 className='font-bold text-[#545567]'>User Experience Class</h3>
-              <p className='text-sm text-[#595959]'> Today at 12.00 PM</p>
+              <h3 className='font-medium text-grey-dark'>User Experience Class</h3>
+              <p className='text-sm text-grey-light'> Today at 12.00 PM</p>
             </div>
           </div>
           <button className='mt-2
-            bg-[#D8587E] 
+            bg-pink-bold 
             w-36 
             h-10 
             rounded-full 
@@ -90,7 +90,7 @@ const Hero = () => {
             justify-center'>
             Join Now</button>
         </div>
-        <div className='hidden md:flex absolute bg-[#F25471] flex top-28 right-40 justify-between items-center rounded-xl w-12 h-12'>
+        <div className='hidden md:flex absolute bg-pink-light flex top-28 right-40 justify-between items-center rounded-xl w-12 h-12'>
           <div className='bg-white flex justify-between items-center ml-2 rounded-lg w-8 h-8'>
             <Image src="/logo4.png"
             alt='logo'

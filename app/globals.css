@@ -3,6 +3,10 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --white : #ffffff;
+  --orange-stu: #F48C06;
+  --logo-cyan :#00FFF0;
+  
 }
 
 @theme inline {
@@ -12,7 +16,20 @@
   --font-mono: var(--font-geist-mono);
   --font-poppins : var(--font-poppins);
   --font-nunito : var(--font-nunito);
-  
+  --color-logo:#00FFF0;
+  --color-orange-stu:#FA8C06;
+  --color-orange-box:#F88C3D;
+  --color-grey-text:#696984;
+  --color-blue-d-cyan:#23BDEE;
+  --color-grey-light:#545567;
+  --color-grey-dark:#595959;
+  --color-dark-text: #010514;
+  --color-blue-dark:#2F327D ;
+  --color-blue-cyan:#00CBB8;
+  --color-blue-mid:#5B72EE;
+  --color-blue-light:#29B9E7;
+  --color-pink-bold:#D8587E;
+  --color-pink-light: #F3627C;
 }
 
 @media (prefers-color-scheme: dark) {

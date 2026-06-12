@@ -11,7 +11,7 @@ const Navbar = () => {
     pt-1
     text-white">
         <div className="flex text-xl md:text-2xl font-bold relative py-3">            
-            <div className="relative left-8 h-10 w-10 absolute rounded border border-[#00FFF0] rotate-45 z-0"></div>
+            <div className="relative left-8 h-10 w-10 absolute rounded border border-logo rotate-45 z-0"></div>
             <h1 className="z-10 pt-1">TOTC</h1>
         </div>
         <ul className="
