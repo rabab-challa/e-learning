@@ -1,9 +1,10 @@
-import React from 'react'
 import Navbar from "../components/navbar";
 import Hero from "../components/hero";
 import Oursuccess from '../components/ourSuccess';
 import CloudSoft from '../components/cloudSoft';
 import WhatIs from '../components/whatIs';
+import WhatYouCanDoWithTOTC from "../components/WhatYouCanDoWithTOTC";
+import OurFeatures from "../components/ourFeatures";
 export default function Home() {
   return (
     <>
@@ -14,6 +15,8 @@ export default function Home() {
       <Oursuccess />
       <CloudSoft />
       <WhatIs />
+      <WhatYouCanDoWithTOTC />
+      <OurFeatures />
     </>
   );
 }

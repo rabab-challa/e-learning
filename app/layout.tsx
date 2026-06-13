@@ -25,7 +25,7 @@ const nunitoSans = Nunito_Sans({
   weight: ["200","300", "400", "500", "600", "700","800","900"],
 });
 const montserrat = Nunito_Sans({
-  variable: "--font-monts",
+  variable: "--font-montserrat",
   subsets: ["latin"],
   weight: ["200","300", "400", "500", "600", "700","800","900"],
 });

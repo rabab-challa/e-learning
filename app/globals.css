@@ -3,10 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --white : #ffffff;
   --orange-stu: #F48C06;
   --logo-cyan :#00FFF0;
-  
 }
 
 @theme inline {
@@ -16,7 +14,7 @@
   --font-mono: var(--font-geist-mono);
   --font-poppins : var(--font-poppins);
   --font-nunito : var(--font-nunito);
-  --font-monts : var(--font-monts);
+  --font-montserrat : var(--font-montserrat);
   --color-logo:#00FFF0;
   --color-orange-stu:#FA8C06;
   --color-orange-box:#F88C3D;
@@ -32,6 +30,14 @@
   --color-pink-bold:#D8587E;
   --color-pink-light: #F3627C;
   --color-card-grey: #C4C4C4;
+  --color-black-text :#010514;
+  --color-green-light: #33EFA0;
+  --color-grey-light2: #EAEAEA;
+  --color-grey-light1:#F4F4F4;
+  --color-red-light : #EE6767;
+  --color-yellow-light:#F6C566;
+  --color-green-light2: #5BEB7B;
+  --color-blue-light1 :#33D9EF;
 }
 
 @media (prefers-color-scheme: dark) {
