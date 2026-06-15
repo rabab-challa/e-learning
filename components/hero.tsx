@@ -38,7 +38,7 @@ const Hero = () => {
         alt="Student"
         width={500} 
         height={780}
-        className='w-[300px] md:w-[400px] lg:w-[500px] h-auto mr-0 lg:mr-50 '/>
+        className=' h-auto mr-0 lg:mr-50 '/>
         <div className='absolute flex hidden md:flex top-38 -left-10 justify-between items-center rounded-xl w-52 h-18 bg-white/80 '> 
           <div className='bg-blue-d-cyan ml-4 w-9 h-9 items-center justify-center flex mx-2 rounded-lg'>
              <Image src="/calendar 1.png" 

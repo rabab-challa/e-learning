@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const WhatYouCanDoWithTOTC = () => {
+const WhatYouCanDo = () => {
   return (
     <div className="px-35 my-20 flex justify-between font-poppins items-center gap-5">
       <div className="relative">
@@ -55,4 +55,4 @@ const WhatYouCanDoWithTOTC = () => {
   );
 };
 
-export default WhatYouCanDoWithTOTC;
+export default WhatYouCanDo;
