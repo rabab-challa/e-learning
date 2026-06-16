@@ -42,10 +42,14 @@
   --color-blue-light2:#3793FF;
   --color-blue-dark1:#5B61EB;
   --color-white1:#F9F9F9;
+  --color-white2:#FBFBFB;
   --color-white-light1:#C9D3E7;
   --color-blue-dark2:#3465E1;
   --color-pink-light1:#FFD4E1;
   --color-pink-dark2:#E13468;
+  --color-pink-light2:#FF6A6A;
+  --color-green-light3:#6BF0A8;
+  --color-purple-light1:#8C7AFF;
 }
 
 @media (prefers-color-scheme: dark) {

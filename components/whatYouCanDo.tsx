@@ -44,11 +44,15 @@ const WhatYouCanDo = () => {
         {/* Play Button */}
         <div className="absolute inset-0 flex items-center justify-center z-20">
           <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg cursor-pointer">
-            <span className="text-blue-d-cyan text-2xl">▶</span>
+            <Image src="/polygon 2.png" 
+            alt="play button" 
+            width={17}
+            height={17}
+            className='ml-1 mt-0.5'
+            />
           </div>
         </div>
 
-        {/* Green Rectangle */}
         <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-green-light rounded-2xl z-0"></div>
       </div>
     </div>
