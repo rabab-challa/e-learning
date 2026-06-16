@@ -6,7 +6,7 @@ const OurFeatures = () => {
       <h1 className='lg:text-2xl text-center text-lg text-blue-dark font-bold'>Our <span className='text-blue-cyan'>Features</span></h1>
       <br/>
       <p className='text-base text-grey-text font-normal text-center '>This very extraordinary feature, can make learning activities more efficient</p>
-      <div className='px-30 relative py-30 flex gap-40'>
+      <div className='px-30 relative pt-30 pb-10 flex gap-40'>
         <div className="text-[var(--font-nunito)]'">
         <div className='absolute top-18 left-40 w-25 h-25 rounded-full bg-green-light'></div>
         <div className='absolute top-15 left-70 w-6 h-6 rounded-full bg-blue-light1'></div>
@@ -76,7 +76,7 @@ const OurFeatures = () => {
             </div>
           </div>
           <div className="absolute top-48 left-117">
-            <div className="relative w-45 h-45 items-center  overflow-hidden rounded-lg shadow-xl/30">
+            <div className="relative w-45 h-45 items-center overflow-hidden rounded-lg shadow-xl/30">
               <Image 
               src="/image 10.png"
               alt="teacher"
@@ -85,8 +85,13 @@ const OurFeatures = () => {
               />
             </div>
           </div>
-          <div className="bg-white1/80 top-40 left-70 w-18 h-18 shadow-lg flex justify-center items-center rounded-full absolute">
-            <div className="bg-white1 w-14 h-14 rounded-full shadow-lg"> </div>
+          <div className="top-35 left-65 absolute">
+            <Image src="/button.png" 
+            alt="button"
+            width={120}
+            height={100}
+            className="w-28 h-170"
+            />
           </div>
           <div className="absolute bottom-11 left-10 flex justify-between items-center gap-5 ">
              <button className="bg-blue-dark2 
@@ -125,8 +130,8 @@ const OurFeatures = () => {
             </div>
           </div>
         </div>
-        <div className='absolute bottom-12 z-0 left-135 w-50 h-50 rounded-full bg-blue-dark1'></div>
-        <div className='absolute z-0 bottom-18 left-130 w-6 h-6 rounded-full bg-pink-dark1'></div>
+        <div className='absolute bottom-5 z-0 left-135 w-50 h-50 rounded-full bg-blue-dark1'></div>
+        <div className='absolute z-0 bottom-8 left-130 w-6 h-6 rounded-full bg-pink-dark1'></div>
         </div>
         <div className="leading-loose mt-10">
           <h3 className="text-blue-dark font-semibold leading-normal w-110 text-3xl">A 
