@@ -4,7 +4,7 @@ import Features from '../data/cloudPage'
 
 const CloudSoft = () => {
   return (
-    <div className='text-center py-24'>
+    <div className='text-center py-10'>
         <h2 className='text-xl max-w-7xl mx-auto px-6 justify-center lg:text-2xl font-extrabold text-blue-dark '>All-In-One <span className='text-blue-cyan'>Cloud Software.</span></h2>
         <br/>
         <p className='text-grey-text text-base font-normal'>TOTC is one powerful online software suite that combines all the tools <br></br> needed to run a successful school or office.

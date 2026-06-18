@@ -2,7 +2,8 @@ const gradebookData = [
   {
     image: "/stu1.png",
     score: "100",
-    scoreBg: "bg-[#D5F1FF]",
+    scoreBg: "bg-blue-light4",
+    scoreText:"text-blue-dark4",
     lineBg: "bg-line1",
     lineWidth: "w-18",
     top: "top-15",
@@ -12,7 +13,8 @@ const gradebookData = [
   {
     image: "/stu2.png",
     score: "98",
-    scoreBg: "bg-[#D8E8FF]",
+    scoreBg: "bg-blue-light5",
+    scoreText:"text-blue-dark5",
     lineBg: "bg-line2",
     lineWidth: "w-30",
     top: "top-8",
@@ -22,7 +24,8 @@ const gradebookData = [
   {
     image: "/stu3.png",
     score: "85",
-    scoreBg: "bg-[#D9F7D0]",
+    scoreBg: "bg-green-light6",
+    scoreText: "text-green-dark1",
     lineBg: "bg-line3",
     lineWidth: "w-30",
     top: "top-42",
@@ -32,7 +35,8 @@ const gradebookData = [
   {
     image: "/stu4.png",
     score: "75",
-    scoreBg: "bg-[#FFD6D6]",
+    scoreBg: "bg-red-light1",
+    scoreText:"text-red-dark1",
     lineBg: "bg-line4",
     lineWidth: "w-18",
     top: "top-32",

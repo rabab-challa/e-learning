@@ -289,7 +289,7 @@ const OurFeatures = () => {
             <p className="text-base text-grey-text font-normal leading-loose w-110">Class provides tools to help run and manage the class such as Class Roster, Attendance, and more. 
               With the Gradebook, teachers can review and grade tests and quizzes in real-time.</p>
         </div>
-        <div className="relative w-120 h-85 z-10 bg-white rounded-2xl shadow-lg">
+        <div className="relative w-120 h-85 overflow-visible bg-white rounded-2xl shadow-lg">
 
           <div className="h-12 bg-blue-sky3 flex items-center justify-center text-white text-sm rounded-t-xl font-medium">
             GradeBook
@@ -305,7 +305,7 @@ const OurFeatures = () => {
             />
             </div>
           </div>
-
+          <div className="absolute -bottom-7 z-0 -left-7 w-42 h-34 bg-blue-sky4  rounded-xl"></div>
           <div className="absolute top-4 -right-3 w-14 h-14 bg-white/30 rounded-full shadow-lg flex items-center justify-center">
           <div className="w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center">
             <Image
@@ -337,13 +337,13 @@ const OurFeatures = () => {
                         className="-ml-2 rounded-full"
                       />
 
-                      <div className={`${item.scoreBg} px-4 py-1 rounded-full`}>
+                      <div className={`${item.scoreBg} ${item.scoreText} px-4 py-1 rounded-full`}>
                         {item.score}
                       </div>
                     </>
                   ) : (
                     <>
-                      <div className={`${item.scoreBg} px-4 py-1 rounded-full `}>
+                      <div className={`${item.scoreBg} ${item.scoreText} px-4 py-1 rounded-full `}>
                         {item.score}
                       </div>
 
@@ -361,11 +361,82 @@ const OurFeatures = () => {
                 </div>
               ))}
             </div>
-          <button className="absolute bottom-4 right-5 px-8 py-3 rounded-full bg-gradient-to-r from-[#545AE7] to-[#393FCF] text-white text-sm font-medium shadow-lg">
+            
+          <button className="absolute bottom-4 right-5 px-8 py-3 rounded-full shadow-lg shadow-[#545AE8]/40 bg-gradient-to-r from-[#545AE7] to-[#393FCF] text-white text-sm font-medium">
             Export
           </button>
-          <div className="absolute -bottom-7 -z-20 -left-7 w-42 h-34 bg-blue-sky4 rounded-xl"></div>
         </div>
+      </div>
+      {/* next section  */}
+      <div className="pl-30 py-20 flex gap-60">
+          <div className="relative z-0">
+            <div className="absolute -top-6 -right-6 -z-10 border border-13 border-blue-d-cyan w-20 h-20 bg-white rounded-full"></div>
+            <Image src="/polygon 3.png"
+            alt="playbutton"
+            width={20}
+            height={20}
+            className="absolute top-15 -right-15"
+            />
+            <Image src="/blurBg.png"
+            alt="blurbg"
+            width={480}
+            height={40}
+            />
+            <div className="absolute top-18  left-18">
+              <div className='relative w-110 backdrop-blur-xs rounded-t-xl h-6 bg-grey-light2'>
+                  <div className='absolute w-3 h-3 bg-red-light top-2 left-4 rounded-full'></div>
+                  <div className='absolute w-3 h-3 bg-yellow-light top-2 left-8 rounded-full'></div>
+                  <div className='absolute w-3 h-3 bg-green-light2 top-2 left-12 rounded-full'></div>
+              </div>
+              <div className='relative w-110 backdrop-blur-sm rounded-b-xl shadow-xl shadow-b-xl h-65 z-10 bg-white'>
+                <div className="absolute top-8 left-15">
+                  <div className="relative w-35 h-35 overflow-hidden rounded-lg ">
+                    <Image 
+                    src="/portrait-teacher-giving-online-class 1.png"
+                    alt="teacher"
+                    fill
+                    className=" object-cover"
+                    />
+                  </div>
+                </div>
+                <div className="absolute top-8 left-55 w-0 h-35 border border-grey-light3"></div>
+                <div className="absolute top-8 left-60">
+                  <div className="relative w-35 h-35 items-center overflow-hidden rounded-lg ">
+                  <Image 
+                  src="/image 10.png"
+                  alt="teacher"
+                  fill      
+                  className=" object-cover"
+                  />
+                 </div>
+                </div>
+                <div className="absolute bottom-3 left-10">
+                  <p className="text-grey-text text-lg font-semibold">Private Discussion</p>
+                  <p className="text-grey-light4 text-xs font-light">Your video can't be seen by others</p>
+                </div>
+                <div className="absolute bottom-3 right-5 ">
+                  <button className="bg-gradient-to-r from-red-start to-red-end rounded-full w-35 shadow-xl/30 shadow-[#EB493A] text-white text-base h-10">End Discussion</button>
+                </div>
+              </div>
+             <div className="absolute top-8 -left-8 w-18 h-18 z-10 bg-white/60 rounded-full shadow-md flex items-center justify-center">
+             <div className="w-13 h-13 bg-white rounded-full shadow-md flex items-center justify-center">
+              <Image src="/vector.png"
+              alt="user"
+              height={40}
+              width={40}
+              />
+             </div>
+             </div>
+            </div>
+           <div className="absolute -bottom-5 -z-10 -left-5 w-42 h-42 bg-[#73BCFF] rounded-xl"></div>
+          </div>
+          <div className="mt-20">
+            <h2 className="text-blue-dark text-3xl font-semibold w-90 leading-normal">One-on-One  <span className="text-blue-cyan">Discussions</span></h2>
+            <p className="text-grey-text text-sm font-normal leading-loose w-90">Teachers and teacher assistants can talk with students privately without leaving the Zoom environment.</p>
+          </div>
+      </div>
+      <div className="flex justify-center mt-30">
+        <button className="text-[#49BBBD] border border-blue-cyan2 rounded-full w-50 h-15"> See more features</button>
       </div>
     </div>
   )
