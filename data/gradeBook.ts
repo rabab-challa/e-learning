@@ -1,0 +1,43 @@
+const gradebookData = [
+  {
+    image: "/stu1.png",
+    score: "100",
+    scoreBg: "bg-[#D5F1FF]",
+    lineBg: "bg-line1",
+    lineWidth: "w-18",
+    top: "top-15",
+    left: "left-0",
+    align: "left",
+  },
+  {
+    image: "/stu2.png",
+    score: "98",
+    scoreBg: "bg-[#D8E8FF]",
+    lineBg: "bg-line2",
+    lineWidth: "w-30",
+    top: "top-8",
+    right: "right-0",
+    align: "right",
+  },
+  {
+    image: "/stu3.png",
+    score: "85",
+    scoreBg: "bg-[#D9F7D0]",
+    lineBg: "bg-line3",
+    lineWidth: "w-30",
+    top: "top-42",
+    left: "left-0",
+    align: "left",
+  },
+  {
+    image: "/stu4.png",
+    score: "75",
+    scoreBg: "bg-[#FFD6D6]",
+    lineBg: "bg-line4",
+    lineWidth: "w-18",
+    top: "top-32",
+    right: "right-0",
+    align: "right",
+  },
+];
+export default gradebookData;

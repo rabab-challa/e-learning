@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Features from "../data/features"
+import gradebookData from "../data/gradeBook"
 const OurFeatures = () => {
   return (
     <div className='my-10'>
@@ -205,6 +206,165 @@ const OurFeatures = () => {
           height={500}
           className="absolute scale-125 top-35"
           />
+        </div>
+      </div>
+      {/* next section  */}
+      <div className="px-40 py-10 flex gap-60 ">
+        <div className="relative">
+
+          <div className="absolute -top-3 -left-8 w-16 h-16 rounded-full bg-blue-light3"></div>
+          <div className="absolute -top-6 left-20 w-4 h-4 rounded-full bg-orange-light1"></div>
+          <div className="absolute -bottom-9 -left-3 w-4 h-4 rounded-full bg-green-light4"></div>
+          <div className="absolute top-60 -right-12 w-3 h-3  rounded-full bg-pink-light4"></div>
+          <div className="relative  bg-white rounded-xl shadow-[0_-4px_30px_rgba(0,0,0,0.06)] p-6 w-85 h-100">
+
+            <div className="inline-flex items-center justify-center px-6 py-1 rounded-full bg-blue-sky text-grey-text2 text-sm font-medium">
+              Question 1
+            </div>
+
+            <h2 className="mt-4 text-2xl leading-loose font-semibold text-blue-dark3">
+              True or false? This play takes place in Italy
+            </h2>
+            <br/>
+              <Image
+                src="/image 13.png"
+                alt="Italy"
+                width={350}
+                height={200}
+                className="absolute shadow-2xl rounded-xl"
+              />
+            
+
+            <div className="absolute -bottom-8 -right-20 bg-white shadow-lg rounded-2xl px-5 py-4 flex items-center gap-4">
+              <div className="relative flex items-center">
+              <Image
+                src="/sent.png"
+                alt="send"
+                width={50}
+                height={50}
+                className="z-10"
+              />
+              <div className="absolute w-9 h-9 bg-green-light5 top-1.5 left-1.5 z-0 rounded-full"></div>
+              <div className="z-10">
+                <p className="text-green-light4 font-semibold  text-base">
+                  Your answer was <br/>
+                  sent successfully
+                </p>
+                <div className="absolute w-5 h-5 bg-green-light5 top-7 -right-2 -z-10 rounded-full"></div>
+                </div>
+              </div>
+
+            </div>
+            <div className="absolute -top-8 -right-4">
+              <Image
+                src="/cross.png"
+                alt="cross"
+                width={120}
+                height={120}
+              />
+            </div>
+
+            <div className="absolute top-1.5 -right-15">
+              <Image
+                src="/tick.png"
+                alt="tick"
+                width={120}
+                height={120}
+              />
+            </div>
+          </div>
+        </div>
+        <div className="mt-20 ">
+          <h3 className="text-3xl text-blue-dark font-semibold leading-normal ">Assessments, <br/>
+            <span className="text-blue-cyan">Quizzes</span>, Tests</h3><br/>
+            <p className="text-base text-grey-text font-normal leading-loose">Easily launch live assignments, quizzes, and<br/> tests.
+            Student results are automatically entered in<br/> the online gradebook.</p>
+          </div>
+      </div>
+      {/* next section  */}
+      <div className="pl-30 py-30 flex gap-20">
+        <div className="mt-20">
+          <h3 className="text-2xl text-blue-cyan font-semibold leading-normal " >Class Management<br/> 
+            <span className="text-blue-dark">Tools for Educators</span></h3><br/>
+            <p className="text-base text-grey-text font-normal leading-loose w-110">Class provides tools to help run and manage the class such as Class Roster, Attendance, and more. 
+              With the Gradebook, teachers can review and grade tests and quizzes in real-time.</p>
+        </div>
+        <div className="relative w-120 h-85 z-10 bg-white rounded-2xl shadow-lg">
+
+          <div className="h-12 bg-blue-sky3 flex items-center justify-center text-white text-sm rounded-t-xl font-medium">
+            GradeBook
+          </div>
+
+          <div className="absolute -top-5 -left-3 w-18 h-18 bg-white/60 rounded-full shadow-md flex items-center justify-center">
+            <div className="w-13 h-13 bg-white rounded-full shadow-md flex items-center justify-center">
+            <Image
+              src="/star.png"
+              alt="star"
+              width={44}
+              height={44}
+            />
+            </div>
+          </div>
+
+          <div className="absolute top-4 -right-3 w-14 h-14 bg-white/30 rounded-full shadow-lg flex items-center justify-center">
+          <div className="w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center">
+            <Image
+              src="/book 1.png"
+              alt="book"
+              width={24}
+              height={24}
+            /></div>
+          </div>
+          <div className="absolute -top-9 right-0 w-8 h-8 rounded-full bg-blue-sky2"></div>
+          <div className="absolute -top-3 -right-8 w-4 h-4 rounded-full bg-blue-sky2"></div>
+            <div className="relative ">
+              {gradebookData.map((item) => (
+                <div
+                  key={item.score}
+                  className={`absolute ${item.top} ${
+                    item.align === "left" ? item.left : item.right
+                  } flex items-center`}
+                >
+                  {item.align === "left" ? (
+                    <>
+                      <div className={`${item.lineWidth} h-5 ${item.lineBg}`}></div>
+
+                      <Image
+                        src={item.image}
+                        alt=""
+                        width={60}
+                        height={60}
+                        className="-ml-2 rounded-full"
+                      />
+
+                      <div className={`${item.scoreBg} px-4 py-1 rounded-full`}>
+                        {item.score}
+                      </div>
+                    </>
+                  ) : (
+                    <>
+                      <div className={`${item.scoreBg} px-4 py-1 rounded-full `}>
+                        {item.score}
+                      </div>
+
+                      <Image
+                        src={item.image}
+                        alt=""
+                        width={60}
+                        height={60}
+                        className="rounded-full"
+                      />
+
+                      <div className={`${item.lineWidth} h-5  ${item.lineBg}`}></div>
+                    </>
+                  )}
+                </div>
+              ))}
+            </div>
+          <button className="absolute bottom-4 right-5 px-8 py-3 rounded-full bg-gradient-to-r from-[#545AE7] to-[#393FCF] text-white text-sm font-medium shadow-lg">
+            Export
+          </button>
+          <div className="absolute -bottom-7 -z-20 -left-7 w-42 h-34 bg-blue-sky4 rounded-xl"></div>
         </div>
       </div>
     </div>
