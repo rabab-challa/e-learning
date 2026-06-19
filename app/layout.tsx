@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Poppins, Nunito_Sans, Montserrat } from "next/font/google";
-
-
+import { Geist, Geist_Mono, Poppins, Nunito_Sans, Roboto , Montserrat } from "next/font/google";
 import "./globals.css";
+
+const roboto = Roboto({
+  variable: "--font-roboto",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "700"],
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,7 +28,7 @@ const nunitoSans = Nunito_Sans({
   subsets: ["latin"],
   weight: ["200","300", "400", "500", "600", "700","800","900"],
 });
-const montserrat = Nunito_Sans({
+const montserrat = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin"],
   weight: ["200","300", "400", "500", "600", "700","800","900"],
@@ -44,7 +48,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${nunitoSans.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${roboto.className} ${nunitoSans.variable} ${montserrat.variable} h-full antialiased`}
     >
       <body className="{poppins.className} min-h-full flex flex-col">{children}</body>
     </html>

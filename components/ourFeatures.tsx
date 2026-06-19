@@ -3,7 +3,7 @@ import Features from "../data/features"
 import gradebookData from "../data/gradeBook"
 const OurFeatures = () => {
   return (
-    <div className='my-10'>
+    <div className='my-10 '>
       <h1 className='lg:text-2xl text-center text-lg text-blue-dark font-bold'>Our <span className='text-blue-cyan'>Features</span></h1>
       <br/>
       <p className='text-base text-grey-text font-normal text-center '>This very extraordinary feature, can make learning activities more efficient</p>
@@ -209,12 +209,12 @@ const OurFeatures = () => {
         </div>
       </div>
       {/* next section  */}
-      <div className="px-40 py-10 flex gap-60 ">
+      <div className="px-40 py-10 flex justify-between">
         <div className="relative">
 
           <div className="absolute -top-3 -left-8 w-16 h-16 rounded-full bg-blue-light3"></div>
           <div className="absolute -top-6 left-20 w-4 h-4 rounded-full bg-orange-light1"></div>
-          <div className="absolute -bottom-9 -left-3 w-4 h-4 rounded-full bg-green-light4"></div>
+          <div className="absolute -bottom-9 -left-3 w-4 h-4 rounded-full bg-green-light1"></div>
           <div className="absolute top-60 -right-12 w-3 h-3  rounded-full bg-pink-light4"></div>
           <div className="relative  bg-white rounded-xl shadow-[0_-4px_30px_rgba(0,0,0,0.06)] p-6 w-85 h-100">
 
@@ -282,14 +282,14 @@ const OurFeatures = () => {
           </div>
       </div>
       {/* next section  */}
-      <div className="pl-30 py-30 flex gap-20">
+      <div className="pl-30 pr-50 py-30 flex gap-20 justify-between">
         <div className="mt-20">
           <h3 className="text-2xl text-blue-cyan font-semibold leading-normal " >Class Management<br/> 
             <span className="text-blue-dark">Tools for Educators</span></h3><br/>
             <p className="text-base text-grey-text font-normal leading-loose w-110">Class provides tools to help run and manage the class such as Class Roster, Attendance, and more. 
               With the Gradebook, teachers can review and grade tests and quizzes in real-time.</p>
         </div>
-        <div className="relative w-120 h-85 overflow-visible bg-white rounded-2xl shadow-lg">
+        <div className="relative w-120 h-85 Z-20 overflow-visible bg-white rounded-2xl shadow-lg">
 
           <div className="h-12 bg-blue-sky3 flex items-center justify-center text-white text-sm rounded-t-xl font-medium">
             GradeBook
@@ -306,7 +306,7 @@ const OurFeatures = () => {
             </div>
           </div>
           <div className="absolute -bottom-7 z-0 -left-7 w-42 h-34 bg-blue-sky4  rounded-xl"></div>
-          <div className="absolute top-4 -right-3 w-14 h-14 bg-white/30 rounded-full shadow-lg flex items-center justify-center">
+          <div className="absolute top-4 -right-8 w-14 h-14 bg-white/30 rounded-full shadow-lg flex items-center justify-center">
           <div className="w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center">
             <Image
               src="/book 1.png"
@@ -368,7 +368,7 @@ const OurFeatures = () => {
         </div>
       </div>
       {/* next section  */}
-      <div className="pl-30 py-20 flex gap-60">
+      <div className="pl-30 pr-40 py-20 flex justify-between gap-60">
           <div className="relative z-0">
             <div className="absolute -top-6 -right-6 -z-10 border border-13 border-blue-d-cyan w-20 h-20 bg-white rounded-full"></div>
             <Image src="/polygon 3.png"
@@ -428,7 +428,7 @@ const OurFeatures = () => {
              </div>
              </div>
             </div>
-           <div className="absolute -bottom-5 -z-10 -left-5 w-42 h-42 bg-[#73BCFF] rounded-xl"></div>
+           <div className="absolute -bottom-5 -z-10 -left-5 w-42 h-42 bg-blue-light6 rounded-xl"></div>
           </div>
           <div className="mt-20">
             <h2 className="text-blue-dark text-3xl font-semibold w-90 leading-normal">One-on-One  <span className="text-blue-cyan">Discussions</span></h2>
@@ -436,7 +436,7 @@ const OurFeatures = () => {
           </div>
       </div>
       <div className="flex justify-center mt-30">
-        <button className="text-[#49BBBD] border border-blue-cyan2 rounded-full w-50 h-15"> See more features</button>
+        <button className="text-blue-cyan2 border border-blue-cyan2 rounded-full w-50 h-15"> See more features</button>
       </div>
     </div>
   )

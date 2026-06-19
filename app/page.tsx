@@ -5,6 +5,7 @@ import CloudSoft from '../components/cloudSoft';
 import WhatIs from '../components/whatIs';
 import WhatYouCanDo from "../components/whatYouCanDo";
 import OurFeatures from "../components/ourFeatures";
+import ExploreCourses from "../components/exploreCourses";
 export default function Home() {
   return (
     <>
@@ -18,6 +19,8 @@ export default function Home() {
         <WhatIs />
         <WhatYouCanDo/>
         <OurFeatures />
+        <ExploreCourses />
+        <br/>
       </section>
     </>
   );
