@@ -32,7 +32,7 @@ const ExploreCourses = () => {
     <div className="mt-10 relative {roboto.classname}" >
 
       {/* Background */}
-      <div className="bg-blue-light7/30 pl-30 pt-50 h-200 rounded-b-xl overflow-visable ">
+      <div className="bg-blue-light7/30 w-280 pl-30 pt-50 h-200 rounded-b-xl overflow-visable ">
 
         <h1 className="text-black text-2xl font-semibold">
           Explore Course
@@ -43,7 +43,7 @@ const ExploreCourses = () => {
         </p>
 
         {/* ROW 1 */}
-        <div className="mt-15 mr-5">
+        <div className="mt-15 mr-5 w-max">
 
           <div className="flex justify-between items-center mb-5">
             <h3 className="text-xl flex items-center gap-2 font-semibold text-black/90">

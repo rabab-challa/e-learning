@@ -289,6 +289,7 @@ const OurFeatures = () => {
             <p className="text-base text-grey-text font-normal leading-loose w-110">Class provides tools to help run and manage the class such as Class Roster, Attendance, and more. 
               With the Gradebook, teachers can review and grade tests and quizzes in real-time.</p>
         </div>
+        <div className="relative z-0">
         <div className="relative w-120 h-85 Z-20 overflow-visible bg-white rounded-2xl shadow-lg">
 
           <div className="h-12 bg-blue-sky3 flex items-center justify-center text-white text-sm rounded-t-xl font-medium">
@@ -305,7 +306,6 @@ const OurFeatures = () => {
             />
             </div>
           </div>
-          <div className="absolute -bottom-7 z-0 -left-7 w-42 h-34 bg-blue-sky4  rounded-xl"></div>
           <div className="absolute top-4 -right-8 w-14 h-14 bg-white/30 rounded-full shadow-lg flex items-center justify-center">
           <div className="w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center">
             <Image
@@ -365,6 +365,14 @@ const OurFeatures = () => {
           <button className="absolute bottom-4 right-5 px-8 py-3 rounded-full shadow-lg shadow-[#545AE8]/40 bg-gradient-to-r from-[#545AE7] to-[#393FCF] text-white text-sm font-medium">
             Export
           </button>
+          <div className="absolute -bottom-3 -z-10 -left-3 w-52 h-37 bg-blue-sky4  rounded-xl"></div>
+          <Image src="/lines.png"
+          alt="img"
+          width={60}
+          height={60}
+          className="absolute bottom-5 -left-10"
+          />
+        </div>
         </div>
       </div>
       {/* next section  */}
