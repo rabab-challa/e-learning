@@ -7,7 +7,7 @@ const OurFeatures = () => {
       <h1 className='lg:text-2xl text-center text-lg text-blue-dark font-bold'>Our <span className='text-blue-cyan'>Features</span></h1>
       <br/>
       <p className='text-base text-grey-text font-normal text-center '>This very extraordinary feature, can make learning activities more efficient</p>
-      <div className='px-30 relative pt-30 pb-10 flex gap-40'>
+      <div className='px-30 relative pt-30 pb-10 flex gap-40 justify-between'>
         <div className="text-[var(--font-nunito)]'">
         <div className='absolute top-18 left-40 w-25 h-25 rounded-full bg-green-light'></div>
         <div className='absolute top-15 left-70 w-6 h-6 rounded-full bg-blue-light1'></div>

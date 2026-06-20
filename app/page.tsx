@@ -6,6 +6,7 @@ import WhatIs from '../components/whatIs';
 import WhatYouCanDo from "../components/whatYouCanDo";
 import OurFeatures from "../components/ourFeatures";
 import ExploreCourses from "../components/exploreCourses";
+import Testimonial from "../components/testimonial";
 export default function Home() {
   return (
     <>
@@ -20,7 +21,7 @@ export default function Home() {
         <WhatYouCanDo/>
         <OurFeatures />
         <ExploreCourses />
-        <br/>
+        <Testimonial />
       </section>
     </>
   );
