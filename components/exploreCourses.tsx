@@ -66,7 +66,7 @@ const ExploreCourses = () => {
             </button>
           </div>
 
-          <div className="flex items-center mt-10 z-0 gap-8">
+          <div className="flex items-center mt-10 z-10 gap-8">
 
             <SubjectCard {...SubjectCards.UtSedEros} />
 
@@ -145,18 +145,18 @@ const ExploreCourses = () => {
           <div className="absolute w-295 z-0 h-13 bg-black/5 -bottom-5 rounded-xl"></div>
         </div>
 
-        {/* ROW 2 */}
+        {/* ROW 3 */}
         <div className="relative mt-15 mr-5  w-max">
 
           <div className="flex justify-between items-center mb-5">
             <h3 className="text-xl flex items-center gap-2 font-semibold text-black/90">
-            <Image src="/android-globe.png" 
+            <Image src="/ribbon-b.png" 
             alt="logo"
             width={8}
             height={8}
             className="w-5 h-5"
             />
-              Quisque a Consequat
+              Aenean Facilisis
             </h3>
 
             <button className="text-blue-cyan text-sm flex w-30 items-center gap-2">

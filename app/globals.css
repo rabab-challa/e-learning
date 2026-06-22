@@ -26,7 +26,8 @@
   --color-blue-dark5:#486F9C;
   --color-blue-dark6:#308598;
   --color-blue-dark7:#525596;
-
+  --color-blue-dark8:#252641;
+  --color-blue-dark9:#171B41;
   /* ---------------------------------blue light  */
   --color-blue-mid:#5B72EE;
   --color-blue-light:#29B9E7;
@@ -65,9 +66,11 @@
   --color-grey-light3:#D5E2FB;
   --color-grey-light4:#A8A8B6;
   --color-grey-light5:#BDBDD1;
+  --color-grey-light6:#626381;
+  --color-grey-light7:#B2B3CF;
+  --color-grey-light8:#83839A;
  /* ---------------------------------grey dark */
   --color-grey-dark:#595959;
-
   /* ---------------------------------green light*/
    --color-green-light: #33EFA0;
    --color-green-light2: #5BEB7B;
