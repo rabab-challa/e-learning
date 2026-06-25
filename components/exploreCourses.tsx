@@ -8,7 +8,7 @@ interface SubjectCardProps {
 
 const SubjectCard = ({ name, color }: SubjectCardProps) => {
   return (
-    <div className="relative p-1 -rotate-10 w-18 flex items-center h-70 bg-white rounded-2xl shadow-sm">
+    <div className="relative p-1 -rotate-10 w-18 h-70 2xl:w-20 2xl:h-75 flex items-center bg-white rounded-2xl shadow-sm">
         <Image src="/bgImg.png" 
         alt="box"
         width={200}
@@ -26,13 +26,33 @@ const SubjectCard = ({ name, color }: SubjectCardProps) => {
   );
 };
 
+const RowHeader = ({
+  icon,
+  title,
+}: {
+  icon: string;
+  title: string;
+}) => (
+  <div className="flex justify-between items-center mb-5">
+    <h3 className="text-lg flex items-center gap-2 font-semibold text-black/90">
+      <Image src={icon} alt="logo" width={20} height={20} className="w-5 h-5" />
+      {title}
+    </h3>
+    <button className="text-blue-cyan text-sm  w-30 flex items-center gap-2 ">
+      SEE ALL
+      <Image src="/android-arrow-forward.png" alt="arrow" width={10} height={10} />
+    </button>
+  </div>
+);
+
+
 
 const ExploreCourses = () => {
   return (
     <div className="mt-10 {roboto.classname}" >
 
       {/* Background */}
-      <div className="bg-blue-light7/30 w-280 pl-30 pt-50 pb-15 max-h rounded-br-[60px] overflow-visable ">
+      <div className="bg-blue-light7/30 w-[80%] pl-30 pt-50 pb-15 rounded-br-[60px] overflow-visible ">
 
         <h1 className="text-black text-2xl font-semibold">
           Explore Course
@@ -43,30 +63,11 @@ const ExploreCourses = () => {
         </p>
 
         {/* ROW 1 */}
-        <div className="relative mt-15 mr-5  w-max">
+        <div className="relative mt-15 mr-5 w-[125%] ">
 
-          <div className="flex justify-between items-center mb-5">
-            <h3 className="text-xl flex items-center gap-2 font-semibold text-black/90">
-            <Image src="/android-color-palette.png" 
-            alt="logo"
-            width={8}
-            height={8}
-            className="w-5 h-5"
-            />
-              Lorem Ipsum
-            </h3>
-
-            <button className="text-blue-cyan text-sm flex w-30 items-center gap-2">
-              SEE ALL 
-              <Image src="/android-arrow-forward.png"
-              alt="arrow"
-              width={10}
-              height={10}
-              />
-            </button>
-          </div>
-
-          <div className="flex items-center mt-10 z-10 gap-8">
+          <RowHeader icon="/android-color-palette.png" title="Lorem Ipsum" />
+          
+          <div className="flex items-center justify-between mt-10 gap-8 ">
 
             <SubjectCard {...SubjectCards.UtSedEros} />
 
@@ -90,33 +91,15 @@ const ExploreCourses = () => {
             />
 
           </div>
-          <div className="absolute w-295 z-0 h-13 bg-black/5 -bottom-5 rounded-xl"></div>
+          <div className="absolute w-full z-0 h-13 bg-black/5 -bottom-5 rounded-xl"></div>
+          
         </div>
         {/* ROW 2 */}
-        <div className="relative mt-15 mr-5  w-max">
+        <div className="relative mt-15 mr-5 w-[125%] ">
 
-          <div className="flex justify-between items-center mb-5">
-            <h3 className="text-xl flex items-center gap-2 font-semibold text-black/90">
-            <Image src="/android-globe.png" 
-            alt="logo"
-            width={8}
-            height={8}
-            className="w-5 h-5"
-            />
-              Quisque a Consequat
-            </h3>
+           <RowHeader icon="/android-globe.png" title="Quisque a Consequat" />
 
-            <button className="text-blue-cyan text-sm flex w-30 items-center gap-2">
-              SEE ALL 
-              <Image src="/android-arrow-forward.png"
-              alt="arrow"
-              width={10}
-              height={10}
-              />
-            </button>
-          </div>
-
-          <div className="flex items-center mt-10 z-0 gap-8">
+          <div className="flex items-center justify-between mt-10 z-10  gap-8 ">
 
             <SubjectCard {...SubjectCards.UtSedEros} />
 
@@ -142,34 +125,15 @@ const ExploreCourses = () => {
             
 
           </div>
-          <div className="absolute w-295 z-0 h-13 bg-black/5 -bottom-5 rounded-xl"></div>
+          <div className="absolute w-full z-0 h-13 bg-black/5 -bottom-5 rounded-xl"></div>
         </div>
 
         {/* ROW 3 */}
-        <div className="relative mt-15 mr-5  w-max">
+        <div className="relative mt-15 mr-5 w-[125%] ">
 
-          <div className="flex justify-between items-center mb-5">
-            <h3 className="text-xl flex items-center gap-2 font-semibold text-black/90">
-            <Image src="/ribbon-b.png" 
-            alt="logo"
-            width={8}
-            height={8}
-            className="w-5 h-5"
-            />
-              Aenean Facilisis
-            </h3>
+          <RowHeader icon="/ribbon-b.png" title="Aenean Facilisis" />
 
-            <button className="text-blue-cyan text-sm flex w-30 items-center gap-2">
-              SEE ALL 
-              <Image src="/android-arrow-forward.png"
-              alt="arrow"
-              width={10}
-              height={10}
-              />
-            </button>
-          </div>
-
-          <div className="flex items-center mt-10 z-30 gap-8">
+          <div className="flex items-center justify-between mt-10 z-10  gap-8 ">
 
             <SubjectCard {...SubjectCards.UtSedEros} />
 
@@ -195,7 +159,7 @@ const ExploreCourses = () => {
             
 
           </div>
-          <div className="absolute w-295 z-10 h-13 bg-black/5 -bottom-5 rounded-xl"></div>
+          <div className="absolute w-full z-10 h-13 bg-black/5 -bottom-5 rounded-xl"></div>
         </div>
       </div>
     </div>
