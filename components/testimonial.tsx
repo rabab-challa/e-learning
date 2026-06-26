@@ -82,7 +82,7 @@ const Testimonial = () => {
           />
         </button>
 
-        <div className="absolute w-2 h-45 -bottom-14 left-5 bg-[#F67766] rounded-l-xl z-10"></div>
+        <div className="absolute w-2 h-45 -bottom-14 left-5 bg-red2 rounded-l-xl z-10"></div>
 
         <div className="absolute px-5 font-nunito w-90 h-45 shadow-xl/30 py-5 -bottom-14 left-5 bg-white rounded-xl">
 

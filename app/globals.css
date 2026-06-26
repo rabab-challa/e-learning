@@ -5,6 +5,7 @@
   --foreground: #171717;
   --orange-stu: #F48C06;
   --logo-cyan :#00FFF0;
+  --bg-red:#F67766;
 }
 
 @theme inline {
@@ -45,7 +46,7 @@
   /* ---------------------------------red light  */
   --color-red-light : #EE6767;
   --color-red-light1:#FFCDCD;
-
+  --color-red2:#F67766;
   /* ---------------------------------cyan  */
   --color-logo:#00FFF0;
   --color-blue-cyan:#00CBB8;

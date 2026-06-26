@@ -45,14 +45,12 @@ const RowHeader = ({
   </div>
 );
 
-
-
 const ExploreCourses = () => {
   return (
-    <div className="mt-10 {roboto.classname}" >
+    <div className="mt-10 font-roboto" >
 
       {/* Background */}
-      <div className="bg-blue-light7/30 w-[80%] pl-30 pt-50 pb-15 rounded-br-[60px] overflow-visible ">
+      <div className="bg-blue-light7/30 w-[80%] pl-30 pt-50 pb-15 rounded-br-[5%] overflow-visible ">
 
         <h1 className="text-black text-2xl font-semibold">
           Explore Course
