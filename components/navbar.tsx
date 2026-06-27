@@ -1,7 +1,13 @@
-const Navbar = () => {
-  return (
+type NavbarProps = {
+  variant?: "home" | "default";
+};
 
-    <nav className="flex
+const Navbar = ({ variant = "home" }: NavbarProps) => {
+    const textColor =
+variant === "home" ? "text-white" : "text-grey1-text";
+  return (
+    
+    <nav className={`flex
     items-center
     justify-between
     w-full
@@ -9,12 +15,12 @@ const Navbar = () => {
     md:px-8
     lg:px-11
     pt-1
-    text-white">
+    ${textColor}`}>
         <div className="flex text-xl md:text-2xl font-bold relative py-3">            
             <div className="relative left-8 h-10 w-10 absolute rounded border border-logo rotate-45 z-0"></div>
             <h1 className="z-10 pt-1">TOTC</h1>
         </div>
-        <ul className="
+        <ul className={`
             flex
             flex-wrap
             justify-center
@@ -27,8 +33,8 @@ const Navbar = () => {
             text-sm
             md:text-base
             lg:text-lg
-            text-white
-            ">
+            ${textColor}
+            `}>
             <li ><a href="/">Home</a></li>
             <li><a href="/courses">Courses</a></li>
             <li><a href="/career">Career</a></li>
@@ -38,6 +44,7 @@ const Navbar = () => {
         {/* <div className="lg:hidden text-3xl cursor-pointer">
             ☰
         </div> */}
+        {variant === "home" && (
         <div className="flex
             items-center
             font-medium
@@ -65,7 +72,19 @@ const Navbar = () => {
                 hover:bg-white
                 hover:text-black
                 rounded-full">Sign Up</button>
-        </div>
+        </div>)}
+        {variant === "default" && (
+        <div className="flex
+            items-center
+            font-medium
+            text-sm
+            md:text-base
+            gap-3
+            md:gap-6
+            mr-0
+            lg:mr-15">
+            
+        </div>)}
     </nav>
   )
 }

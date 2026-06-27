@@ -39,6 +39,7 @@
   --color-blue-light5:#CDE4FF;
   --color-blue-light6:#73BCFF;
   --color-blue-light7:#9DCCFF;
+  
   /* ---------------------------------red dark */
   --color-red-start:#F55454;
   --color-red-end:#E5422B;
@@ -72,6 +73,7 @@
   --color-grey-light8:#83839A;
  /* ---------------------------------grey dark */
   --color-grey-dark:#595959;
+  --color-grey1-text:#5B5B5B;
   /* ---------------------------------green light*/
    --color-green-light: #33EFA0;
    --color-green-light2: #5BEB7B;
@@ -99,6 +101,7 @@
   --color-black-text :#010514;
   --color-grey-text2:#717FB0;
   --color-grey-text3:#5F5F7E ;
+
   /* ---------------------------------yellow */
   --color-yellow-light:#F6C566;
   --color-yellow1:#FFB300;

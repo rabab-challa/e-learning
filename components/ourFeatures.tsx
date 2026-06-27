@@ -329,33 +329,49 @@ const OurFeatures = () => {
                     <>
                       <div className={`${item.lineWidth} h-5 ${item.lineBg}`}></div>
 
-                      <Image
-                        src={item.image}
-                        alt=""
-                        width={60}
-                        height={60}
-                        className="-ml-2 rounded-full"
-                      />
-
-                      <div className={`${item.scoreBg} ${item.scoreText} px-4 py-1 rounded-full`}>
-                        {item.score}
+                      <div className="relative -ml-2">
+                        <Image
+                          src={item.image}
+                          alt=""
+                          width={60}
+                          height={60}
+                          className="rounded-full"
+                        />
+                        {item.isTopper && (
+                        <Image
+                          src="/star.png"
+                          alt="Topper"
+                          width={31}
+                          height={31}
+                          className="absolute -bottom-7 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20"
+                        />
+                      )}
+                        <div
+                          className={`absolute bottom-0 -right-4  translate-x-1/4 translate-y-1/4 ${item.scoreBg} ${item.scoreText} px-3 py-1 rounded-full text-sm font-semibold whitespace-nowrap`}
+                        >
+                          {item.score}
+                        </div>
                       </div>
                     </>
                   ) : (
                     <>
-                      <div className={`${item.scoreBg} ${item.scoreText} px-4 py-1 rounded-full `}>
-                        {item.score}
+                      <div className="relative">
+                        <Image
+                          src={item.image}
+                          alt=""
+                          width={60}
+                          height={60}
+                          className="rounded-full"
+                        />
+
+                        <div
+                          className={`absolute bottom-0 -left-5 translate-x-1/4 translate-y-1/4 ${item.scoreBg} ${item.scoreText} px-3 py-1 rounded-full text-sm font-semibold whitespace-nowrap`}
+                        >
+                          {item.score}
+                        </div>
                       </div>
 
-                      <Image
-                        src={item.image}
-                        alt=""
-                        width={60}
-                        height={60}
-                        className="rounded-full"
-                      />
-
-                      <div className={`${item.lineWidth} h-5  ${item.lineBg}`}></div>
+                      <div className={`${item.lineWidth} h-5 ${item.lineBg}`}></div>
                     </>
                   )}
                 </div>

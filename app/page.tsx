@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <section className="bg-[#49BBBD] overflow-hidden w-full ">
-        <Navbar />
+        <Navbar variant="home" />
         <Hero />
       </section>
       <section className="bg-[#ffffff] overflow-hidden w-full ">

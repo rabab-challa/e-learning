@@ -1,6 +1,7 @@
 const gradebookData = [
   {
     image: "/stu1.png",
+    isTopper: true,
     score: "100",
     scoreBg: "bg-blue-light4",
     scoreText:"text-blue-dark4",
