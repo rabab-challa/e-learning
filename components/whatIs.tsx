@@ -17,7 +17,7 @@ const WhatIs = () => {
             {Cards.map((item, index) =>(
                  <div 
                  key={index}
-                 className='relative w-108 shadow-lg  rounded-xl bg-card-grey/50'>
+                 className='relative w-108 shadow-lg rounded-xl bg-card-grey/50'>
                     <Image src={item.image}
                     alt={item.alt}
                     width={600}

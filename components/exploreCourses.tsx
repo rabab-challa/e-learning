@@ -38,7 +38,7 @@ const RowHeader = ({
       <Image src={icon} alt="logo" width={20} height={20} className="w-5 h-5" />
       {title}
     </h3>
-    <button className="text-blue-cyan text-sm  w-30 flex items-center gap-2 ">
+    <button className="text-blue-cyan text-sm  w-20 flex items-center gap-2 ">
       SEE ALL
       <Image src="/android-arrow-forward.png" alt="arrow" width={10} height={10} />
     </button>
@@ -50,7 +50,7 @@ const ExploreCourses = () => {
     <div className="mt-10 font-roboto" >
 
       {/* Background */}
-      <div className="bg-blue-light7/30 w-[80%] pl-30 pt-50 pb-15 rounded-br-[5%] overflow-visible ">
+      <div className="bg-blue-light7/30 w-[80%] px-20 pt-50 pb-15 rounded-br-[5%] overflow-visible ">
 
         <h1 className="text-black text-2xl font-semibold">
           Explore Course

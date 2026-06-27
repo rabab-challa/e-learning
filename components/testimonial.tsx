@@ -61,7 +61,7 @@ const Testimonial = () => {
       </div>
 
       
-      <div className="relative w-80 h-110 shadow-xl mr-50">
+      <div className="relative w-100 h-120 shadow-xl mr-50">
 
         <Image
           src={testimonial.image}
@@ -82,20 +82,20 @@ const Testimonial = () => {
           />
         </button>
 
-        <div className="absolute w-2 h-45 -bottom-14 left-5 bg-red2 rounded-l-xl z-10"></div>
+        <div className="absolute w-2 h-55 -bottom-14 left-22 bg-red2 rounded-l-xl z-10"></div>
 
-        <div className="absolute px-5 font-nunito w-90 h-45 shadow-xl/30 py-5 -bottom-14 left-5 bg-white rounded-xl">
+        <div className="absolute px-5 font-nunito w-105 h-55 shadow-xl/30 py-5 -bottom-14 left-22 bg-white rounded-xl">
 
           <div className="flex justify-center gap-5">
-            <div className="h-20 w-[1px] bg-grey-light5"></div>
+            <div className="h-25 w-[1px] bg-grey-light5"></div>
 
-            <p className="text-xs text-grey-text3 leading-5 tracking-wide">
+            <p className="text-base text-grey-text3 leading-5 tracking-wide">
               "{testimonial.review}"
             </p>
           </div>
 
           <div className="flex pt-8 pr-5 justify-between">
-            <p className="pl-3 text-sm font-bold text-grey-text">
+            <p className="pl-3 text-base font-bold text-grey-text">
               {testimonial.name}
             </p>
 

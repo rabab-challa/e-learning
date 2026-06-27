@@ -41,7 +41,7 @@ const LatestNews = () => {
                         />
                           <div className="absolute inset-0 bg-blue-dark9/10 rounded-2xl"></div>
 
-                        <div className="absolute bottom-4 right-4 bg-blue-cyan2 text-white text-xs px-2 py-1 rounded-full">
+                        <div className="absolute bottom-4 right-4 bg-blue-cyan2 text-white text-xs px-4  py-1 rounded-full">
                         {item.tag}
                         </div>
                     </div>
@@ -51,7 +51,7 @@ const LatestNews = () => {
                         {item.title}
                         </h3>
 
-                        <p className="text-grey-text text-sm leading-5">
+                        <p className="text-grey-text text-sm font-light leading-5">
                         {item.description}
                         </p>
                     </div>

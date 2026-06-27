@@ -392,7 +392,7 @@ const OurFeatures = () => {
         </div>
       </div>
       {/* next section  */}
-      <div className="pl-30 pr-40 py-20 flex justify-between gap-60">
+      <div className="pl-30 pr-50 py-20 flex justify-center gap-40">
           <div className="relative z-0">
             <div className="absolute -top-6 -right-6 -z-10 border border-13 border-blue-d-cyan w-20 h-20 bg-white rounded-full"></div>
             <Image src="/polygon 3.png"
@@ -454,7 +454,7 @@ const OurFeatures = () => {
             </div>
            <div className="absolute -bottom-5 -z-10 -left-5 w-42 h-42 bg-blue-light6 rounded-xl"></div>
           </div>
-          <div className="mt-20">
+          <div className="mt-20 ">
             <h2 className="text-blue-dark text-3xl font-semibold w-90 leading-normal">One-on-One  <span className="text-blue-cyan">Discussions</span></h2>
             <p className="text-grey-text text-sm font-normal leading-loose w-90">Teachers and teacher assistants can talk with students privately without leaving the Zoom environment.</p>
           </div>
