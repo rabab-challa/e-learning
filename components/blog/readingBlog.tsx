@@ -1,13 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
-import RowHeader from './common/common'
 import Reading from '../../data/readingblog'
-import CommonHeader from './common/common'
+import SectionTitle from './common/common'
 const ReadingBlog = () => {
   return (
     <div className='bg-white my-10'>
-      <div className='px-15 mb-2'>
-         <CommonHeader title='Reading blog list' titleClassName='text-lg font-bold text-black/80' />
+      <div className='px-15 mb-4'>
+         <SectionTitle title='Reading blog list' titleClassName='text-lg font-bold text-black/80' />
       </div>
       <div className='flex justify-between items-center px-15 '>
         {Reading.map((item, index) => (

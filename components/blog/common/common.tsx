@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-interface CommonHeaderProps {
+interface SectionTitleProps {
   title: string;
   subtitle?: string;
   logo?: string;
@@ -18,7 +18,7 @@ interface CommonHeaderProps {
   logoClassName?: string;
 }
 
-const CommonHeader = ({
+const SectionTitle = ({
   title,
   subtitle,
   logo,
@@ -31,7 +31,7 @@ const CommonHeader = ({
   subtitleClassName = "",
   seeAllClassName = "",
   logoClassName = "",
-}: CommonHeaderProps) => {
+}: SectionTitleProps) => {
   return (
     <div className={`flex items-center justify-between ${className}`}>
       <div className="flex items-center gap-3">
@@ -64,11 +64,11 @@ const CommonHeader = ({
           className={`flex items-center gap-2 ${seeAllClassName}`}
         >
           <span>See All</span>
-          {showArrow && <span>→</span>}
+          {showArrow && <span></span>}
         </Link>
       )}
     </div>
   );
 };
 
-export default CommonHeader;
+export default SectionTitle;

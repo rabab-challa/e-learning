@@ -14,7 +14,7 @@ const Testimonial = () => {
   const testimonial = testimonialData[current];
 
   return (
-    <div className="my-30 px-30 flex justify-between">
+    <div className="my-30 px-30 flex justify-between gap-8">
 
       <div>
         <div className="flex items-center gap-8 font-nunito">
@@ -61,7 +61,7 @@ const Testimonial = () => {
       </div>
 
       
-      <div className="relative w-100 h-120 shadow-xl mr-50">
+      <div className="relative w-100 h-120 shadow-xl mr-40">
 
         <Image
           src={testimonial.image}
