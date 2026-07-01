@@ -29,9 +29,26 @@ const RelatedBlog = () => {
                 </div>
                 <p>Lina</p>
               </div>
+              <p className='text-sm  tracking-wider font-noraml text-grey-text leading-normal pt-4'>Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...</p>
+              <div className='pt-5 flex justify-between'>
+                 <p className="text-grey-text text-sm font-normal underline underline-offset-4 cursor-pointer">
+                    Read more
+                </p>
+                <div className='flex justify-center gap-4'>
+                    <Image src="/eye.png"
+                    alt='eye'
+                    width={10}
+                    height={10} 
+                    className='w-5 h-3 mt-1'/>
+                    <p className='text-grey-text text-sm font-normal'>{item.views}</p>
+                </div>
+              </div>
             </div>
             </div>
           ))}
+        </div>
+        <div>
+          
         </div>
     </div>
   )
